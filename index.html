@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Indigenous Populations in Canada</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+                line-height: 1.6;
+            }
+            
+            header {
+                background-color: #2c3e50;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+            
+            main {
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            h2 {
+                color: #2c3e50;
+                border-bottom: 3px solid #3498db;
+                padding-bottom: 10px;
+                margin-top: 40px;
+            }
+            
+            h3 {
+                color: #34495e;
+                margin-top: 30px;
+            }
+            
+            section {
+                margin-bottom: 50px;
+            }
+            
+            p {
+                color: #555;
+                margin: 15px 0;
+            }
+            
+            .viz-container {
+                margin: 30px 0;
+                padding: 20px;
+                background-color: #fafafa;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+            }
+            
+            iframe {
+                width: 100%;
+                border: none;
+                display: block;
+                background-color: white;
+            }
+            
+            .map-frame {
+                height: 650px;
+            }
+            
+            .chart-frame {
+                height: 550px;
+            }
+            
+            footer {
+                background-color: #34495e;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+            
+            footer a {
+                color: #3498db;
+                text-decoration: none;
+            }
+            
+            footer a:hover {
+                text-decoration: underline;
+            }
+            
+            hr {
+                border: none;
+                border-top: 2px solid #ddd;
+                margin: 40px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Indigenous Populations in Canada: 2021 Census Analysis</h1>
+        </header>
+
+        <main>
+            <section>
+                <h3>Part 1: Majority of Canadians Are Non-Indigenous</h3>
+                <p>
+                    This chart shows the national population breakdown from the 2021 Census. 
+                    It highlights how the vast majority of Canadians are Non-Indigenous, 
+                    while the groups, First Nations, Métis, and Inuit make up smaller proportions 
+                    of the total.
+
+                </p>
+                <div class="viz-container">
+                    <iframe src="donut.html" class="chart-frame"></iframe>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Part 2: Geographic Distribution of Indigenous Populations</h3>
+                <p>
+                    The map below shows how Indigenous populations are distributed across Canadian provinces 
+                    and territories. You can toggle between different layers to view the overall percentage 
+                    of Indigenous peoples, as well as specific counts for First Nations, Inuit, and Métis 
+                    populations. 
+                </p>
+                <div class="viz-container">
+                    <iframe src="map.html" class="map-frame"></iframe>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Part 3: Indigenous Adults Report Higher Food Insecurity and Poorer Mental Health</h3>
+                <p>
+                    This interactive scatterplot explores the relationship between mental health and
+                    food insecurity across Indigenous and non-Indigenous groups. There are three frames
+                    switching between both sexes, males and females. The plots show consistent trends where
+                    Indigenous adults report higher food insecurity and poorer mental health.
+                </p>
+                <div class="viz-container">
+                    <iframe src="scatter.html" class="chart-frame"></iframe>
+                </div>
+            </section>
+
+            <hr>
+            <section>
+                <h3>Top Three Territories with the Largest Indigenous Populations</h3>
+                <p>
+                    These three donut charts focus on the top 3 territories with the highest proportions of 
+                    Indigenous residents. These 3 territories are Nunavut, the Northwest Territories, and Yukon. They show how 
+                    Indigenous populations make up the majority in Nunavut and remain significant in the 
+                    other northern regions.
+                </p>
+                <div class="viz-container">
+                    <iframe src="subplots.html" class="chart-frame"></iframe>
+                </div>
+            </section>
+            <hr>
+
+        </main>
+
+        <footer>
+            <p>Data Source: Statistics Canada, 2021 Census</p>
+            <address>Created by Natasha Guharoy | 11/12/25</address>
+        </footer>
+    </body>
+</html>
